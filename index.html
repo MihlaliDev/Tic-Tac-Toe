@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="appContainer">
+        <header>
+            <div class="status-badge" id="turn-display">
+                <span id="turn-label">Player's Turn</span>
+            </div>
+        </header>
+        <main class="gameArea">
+            <div class="scoreBoard">
+                <div class="playerCard" id="player">
+                    <div class="playerInfo">
+                        <span class="player-mark">X</span>
+                        <span class="name">Player</span>
+                    </div>
+                    <span class="score">0</span>
+                </div>
+                <div class="vsDivider">VS</div>
+                <div class="playerCard" id="computer">
+                    <div class="playerInfo">
+                        <span class="player-mark">X</span>
+                        <span class="name">Computer</span>
+                    </div>
+                    <span class="score">0</span>
+                </div>
+            </div>
+            <div class="boardContainer">
+                <div class="board">
+                    <div class="cells cell0" index="0"></div>
+                    <div class="cells cell1" index="1"></div>
+                    <div class="cells cell2" index="2"></div>
+                    <div class="cells cell3" index="3"></div>
+                    <div class="cells cell4" index="4"></div>
+                    <div class="cells cell5" index="5"></div>
+                    <div class="cells cell6" index="6"></div>
+                    <div class="cells cell7" index="7"></div>
+                    <div class="cells cell8" index="8"></div>
+                </div>
+            </div>
+            <div class="controls">
+                <button type="button" class="btn-primary" id="start">
+                    Start Game
+                </button>
+                <button type="button" class="btn-secondary hidden" id="restart">
+                    Restart
+                </button>
+                <button type="button" class="btn-outline hidden" id="reset">
+                    Reset Scores
+                </button>
+            </div>
+        </main>
+    </div>
+    <div id="result-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2 id="result-message">Victory!</h2>
+        <div class="result-animation-container"></div>
+        <button id="modal-close" class="btn-primary">Play Again</button>
+      </div>
+    </div>
+</body>
+</html>
