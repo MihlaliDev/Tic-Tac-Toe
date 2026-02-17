@@ -6,8 +6,8 @@
     --text-main: #f0f0f5;
     --text-dim: #9494b8;
 
-    --accent-x: #00f2ff; /* Cyan Neon */
-    --accent-o: #ff2d55; /* Magenta/Electric Red */
+    --accent-x: #cc2204; 
+    --accent-o: #019215; 
     --accent-gold: #ffcc00;
 
     --glass-border: rgba(255, 255, 255, 0.1);
@@ -282,6 +282,26 @@ h1 {
   display: flex;
   gap: 1rem;
 }
+
+.level-select {
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+}
+
+.level-select label {
+  font-weight: 700;
+  font-size: .8rem;
+  color: var(--text-dim);
+}
+
+#level-select {
+  padding: .55rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+
 
 button {
   flex: 1;
